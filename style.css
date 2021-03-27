@@ -4,12 +4,15 @@ html { box-sizing: border-box; }
 body {
   color: #ffffff;
   background-image: linear-gradient(#615dad, #ffc8da);
+  height:100vh;
   font-size: 16px;
 }
 
 .piskvorky {
-  margin: 150px;
-  width: 350px;
+  margin: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
 }
 
 .obrazek {
