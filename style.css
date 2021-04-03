@@ -8,7 +8,7 @@ body {
   font-size: 16px;
 }
 
-.piskvorky, .rules {
+.piskvorky {
   margin: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -71,9 +71,16 @@ padding: 10px;
 }
 
 /* pravidla */
+.rules {
+margin: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 435px;
+}
 .rules-content {
   text-align: left;
   border-radius: 5px 5px 0px 0px;
+  font-size: 20px;
 }
 
 .rules-content h1 {
@@ -82,7 +89,17 @@ padding: 10px;
 
 ol li {
   margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 40px;
   padding-left: 10px;
+
+}
+
+.circle, .cross {
+  width: 0.7em; 
+  height: 0.7em;
+  filter: invert(100%);
+
 }
 
 figure img {
@@ -101,4 +118,25 @@ figcaption {
 
 .btn-intro a:hover {
   background-color: #1cbb96;
+}
+
+@media (min-width: 500px) {
+  .rules {
+    width: 1000px;
+  }
+  .rules-content {
+    font-size: 26px;
+  }
+  .rules-content h1 {
+    font-size: 50px;
+  }
+  .rules-instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .instruction {
+    width: 40%;
+  }
+ 
 }
