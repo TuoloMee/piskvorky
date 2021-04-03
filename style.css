@@ -8,7 +8,7 @@ body {
   font-size: 16px;
 }
 
-.piskvorky {
+.piskvorky, .rules {
   margin: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +22,7 @@ body {
   border-radius: 5px 5px 0px 0px;
 }
 
-.piskvorky-obsah {
+.piskvorky-obsah, .rules-content {
   background-color: #283e50;
   padding: 30px 20px 20px 20px;
   text-align: center;
@@ -39,7 +39,7 @@ p {
 }
 
 
-.tlacitka {
+.btn {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -51,21 +51,31 @@ a {
   color: #ffffff;
   
 }
-.tlacitka a{
+.btn a{
 display: block;
 padding: 10px;
 }
-.pravidla {
+.btn-rules, .btn-intro {
   background-color: #1fcca4;
   border-bottom: 1px solid #3f464d;
 }
-.pravidla a:hover {
+.btn-rules a:hover {
   background-color: #1cbb96;
 }
 
-.zacit {
+.btn-start {
   background-color: #0197f6;
 }
-.zacit a:hover {
+.btn-start a:hover {
   background-color: #0090e9;
+}
+
+/* pravidla */
+.rules-content {
+  text-align: left;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.btn-intro a:hover {
+  background-color: #1cbb96;
 }
