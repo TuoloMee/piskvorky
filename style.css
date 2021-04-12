@@ -121,6 +121,67 @@ figcaption {
   background-color: #1cbb96;
 }
 
+/* hra */
+.game {
+ margin: 20px auto;
+  max-width: 80vmin
+}
+
+h1 {
+  text-align: center;
+}
+.game_menu {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.player {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  /* align-self: flex-start; */
+}
+
+
+
+.btn-home {
+  background-color: #1fcca4;
+  border-radius: 5px;
+  padding: 5px;
+}
+.btn-home a:hover {
+  background-color: #1cbb96;
+}
+
+.btn-restart {
+  background-color: #0197f6;
+  border-radius: 5px;
+  padding: 5px;
+}
+.btn-restart a:hover {
+  background-color: #0090e9;
+}
+.game_area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game_area--btn {
+  min-width: 30px;
+  min-height: 35px;
+  border: solid 1px black;
+  opacity: 0.5;
+  min-width: 10%;
+  flex-basis: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.game_area--btn:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
 @media (min-width: 500px) {
   .rules {
     width: 1000px;
@@ -141,3 +202,6 @@ figcaption {
   }
  
 }
+
+
+
