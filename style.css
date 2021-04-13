@@ -124,22 +124,26 @@ figcaption {
 /* hra */
 .game {
  margin: 20px auto;
-  max-width: 80vmin
+  max-width: 80vmin;
+  min-width: 300px;
 }
 
 h1 {
   text-align: center;
+  font-size: 50px;
 }
 .game_menu {
   display: flex;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .player {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 25px;
   /* align-self: flex-start; */
+  margin: 0px;
 }
 
 
@@ -147,7 +151,7 @@ h1 {
 .btn-home {
   background-color: #1fcca4;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 .btn-home a:hover {
   background-color: #1cbb96;
@@ -156,25 +160,32 @@ h1 {
 .btn-restart {
   background-color: #0197f6;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 .btn-restart a:hover {
   background-color: #0090e9;
 }
+
+.home .restart {
+  padding: 0px;
+  margin: -10px;
+}
 .game_area {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .game_area--btn {
-  min-width: 30px;
-  min-height: 35px;
+  width: 10%;
+  height: 35px;
   border: solid 1px black;
   opacity: 0.5;
-  min-width: 10%;
+  
   flex-basis: auto;
   margin: 0;
   padding: 0;
+  
 }
 
 .game_area--btn:hover {
