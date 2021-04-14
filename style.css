@@ -125,7 +125,7 @@ figcaption {
 .game {
  margin: 20px auto;
   max-width: 80vmin;
-  min-width: 300px;
+  
 }
 
 h1 {
@@ -153,7 +153,7 @@ h1 {
   border-radius: 5px;
   padding: 10px;
 }
-.btn-home a:hover {
+.btn-home:hover {
   background-color: #1cbb96;
 }
 
@@ -162,7 +162,7 @@ h1 {
   border-radius: 5px;
   padding: 10px;
 }
-.btn-restart a:hover {
+.btn-restart:hover {
   background-color: #0090e9;
 }
 
@@ -177,9 +177,9 @@ h1 {
 }
 
 .game_area--btn {
-  width: 10%;
-  height: 35px;
-  border: solid 1px black;
+  width: 8vmin;
+  height: 8vmin;
+  border: 1px solid black;
   opacity: 0.5;
   
   flex-basis: auto;
