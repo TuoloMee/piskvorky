@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .piskvorky {
@@ -97,9 +98,10 @@ ol li {
 }
 
 .circle, .cross {
-  width: 0.7em; 
-  height: 0.7em;
+  width: 1em; 
+  height: 1em;
   filter: invert(100%);
+  vertical-align: -0.1em;
 
 }
 
@@ -131,6 +133,7 @@ figcaption {
 h1 {
   text-align: center;
   font-size: 50px;
+  font-weight: lighter;
 }
 .game_menu {
   display: flex;
