@@ -16,9 +16,11 @@ for (let i = 0; i < btnElm.length; i+=1) {
   if (kdoJeNaTahu === 'circle') {
     btnElm[i].classList.add('pole-circle');
     kdoJeNaTahu = 'cross';
+    btnElm[i].setAttribute('disabled', true);
   } else {
     btnElm[i].classList.add('pole-cross');
     kdoJeNaTahu = 'circle';
+    btnElm[i].setAttribute('disabled', true);
   }
 
   hrac.innerHTML = Hraje();
