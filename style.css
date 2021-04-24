@@ -190,9 +190,23 @@ h1 {
   
 }
 
-.game_area--btn:hover {
+.game_area--btn:hover,
+.game_area--btn:focus
+ {
   filter: brightness(110%);
   cursor: pointer;
+}
+
+.pole-circle {
+  background-image: url(images/circle.svg);
+}
+.pole-cross {
+  background-image: url(images/cross.svg);
+}
+.pole-circle, .pole-cross {
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 500px) {
