@@ -182,7 +182,7 @@ h1 {
   width: 8vmin;
   height: 8vmin;
   border: 1px solid black;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(218, 211, 211, 0.3);
   
   flex-basis: auto;
   margin: 0;
@@ -190,18 +190,35 @@ h1 {
   
 }
 
-.game_area--btn:hover,
+.game_area--btn:hover
+ {
+  filter: brightness(300%);
+}
+
 .game_area--btn:focus
  {
-  filter: brightness(110%);
   cursor: pointer;
+}
+
+@keyframes zvetseni {
+  from {
+    /* transform: scale(0.1); */
+    background-size: 0%;
+  }
+  to {
+    /* transform: scale(1); */
+    background-size: 70%;
+  }
 }
 
 .pole-circle {
   background-image: url(images/circle.svg);
+  /* transform: scale(); */
+  animation: zvetseni 0.30s;
 }
 .pole-cross {
   background-image: url(images/cross.svg);
+  animation: zvetseni 0.30s;
 }
 .pole-circle, .pole-cross {
   background-position: center;
