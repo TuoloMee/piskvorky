@@ -18,11 +18,22 @@ for (let i = 0; i < btnElm.length; i+=1) {
     btnElm[i].classList.add('pole-circle');
     kdoJeNaTahu = 'cross';
     btnElm[i].setAttribute('disabled', true);
+    if (isWinningMove(btnElm[i]) === true) {
+      setTimeout(function(){
+        alert('Vyhrálo kolečko')
+      },3000);
+    }
+
     
   } else {
     btnElm[i].classList.add('pole-cross');
     kdoJeNaTahu = 'circle';
     btnElm[i].setAttribute('disabled', true);
+    if (isWinningMove(btnElm[i]) === true) {
+      setTimeout(function(){
+        alert('Vyhrál křížek')
+      }, 3000);
+     }
   }
 
   hrac.innerHTML = Hraje();
