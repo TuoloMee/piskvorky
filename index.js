@@ -19,20 +19,25 @@ for (let i = 0; i < btnElm.length; i+=1) {
     kdoJeNaTahu = 'cross';
     btnElm[i].setAttribute('disabled', true);
     if (isWinningMove(btnElm[i]) === true) {
-      setTimeout(function(){
-        alert('Vyhrálo kolečko')
-      },3000);
+      setTimeout(() => {
+        confirm('Vyhrálo kolečko. Chceš hrát znovu?')
+        {
+          location.reload();
+        }
+      }, 200);
     }
-
     
   } else {
     btnElm[i].classList.add('pole-cross');
     kdoJeNaTahu = 'circle';
     btnElm[i].setAttribute('disabled', true);
     if (isWinningMove(btnElm[i]) === true) {
-      setTimeout(function(){
-        alert('Vyhrál křížek')
-      }, 3000);
+      setTimeout(() => {
+        confirm('Vyhrál křížek. Chceš hrát znovu?')
+        {
+          location.reload();
+        }
+      }, 200);
      }
   }
 
