@@ -80,13 +80,14 @@ const isWinningMove = (field) => {
 	let i;
 
 	let inRow = 1;
+  // doleva
 	i = origin.column;
 	while (i > 0 && symbol === getSymbol(getField(origin.row, i - 1))) {
 		inRow++
 		i--
 	}
 
-
+// doprava
 	i = origin.column
 	while (
 		i < boardSize - 1 &&
@@ -102,13 +103,14 @@ const isWinningMove = (field) => {
 
 	let inColumn = 1
 
+  // nahoru
 	i = origin.row
 	while (i > 0 && symbol === getSymbol(getField(i - 1, origin.column))) {
 		inColumn++
 		i--
 	}
 
-
+// dolu
 	i = origin.row
 	while (
 		i < boardSize - 1 &&
@@ -121,6 +123,59 @@ const isWinningMove = (field) => {
 	if (inColumn >= symbolsToWin) {
 		return true
 	}
+
+  // diagonála
+
+  let diagonalaX = 1;
+  let row = origin.row;
+  let column = origin.column;
+
+
+ // diagonála vpravo dolu
+  while (row < boardSize -1 && column < boardSize -1 && symbol === getSymbol(getField(row + 1, column + 1))) {
+    diagonalaX++;
+    row++;
+    column++;
+  }
+
+  row = origin.row;
+  column = origin.column;
+ // diagonála vlevo nahoru chyba
+  while (row > 0 && column > 0 && symbol === getSymbol(getField(row - 1, column - 1))) {
+    diagonalaX++;
+    row--;
+    column--;
+  }
+
+
+  if (diagonalaX >= symbolsToWin) {
+    return true
+  }
+
+  let diagonalaY = 1;
+  row = origin.row;
+  column = origin.column;
+   // diagonála vpravo nahoru chyba
+   while (row > 0 && column < boardSize - 1 && symbol === getSymbol(getField(row - 1, column + 1))) {
+    diagonalaY++;
+    row--;
+    column++;
+  }
+
+   // diagonála vlevo dolu
+  row = origin.row;
+  column = origin.column;
+  while (row < boardSize - 1 && column > 0 && symbol === getSymbol(getField(row + 1, column - 1))) {
+    diagonalaY++;
+    row++;
+    column--;
+  }
+
+
+
+  if (diagonalaY >= symbolsToWin) {
+    return true
+  }
 
 	return false
 };
